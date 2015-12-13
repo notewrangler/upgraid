@@ -1,0 +1,54 @@
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00C5CD;
+}
+
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#inputBar {
+  position: relative;
+  top: 10px;
+}
+#links {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+#profileLink {
+	margin-left: 30px;
+}
+#groupLink {
+	/*margin-right: 20px;*/
+}
+#userLogin {
+  display: inline-block;
+  margin-right: 10px;
+}
+#passwordLogin {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+#submitLogin {
+  display: inline-block;
+  margin-right: 10px;
+}
+#registerBtnLogin {
+  display: inline-block;
+  /*position: absolute;
+	top: 10px;
+	left: 350px;*/
+}
+#register {
+  width: 400px;
+  margin: auto;
+}
