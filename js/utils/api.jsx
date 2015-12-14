@@ -1,6 +1,8 @@
 var Fetch = require('whatwg-fetch');
-var rootURL = 'https://safe-brook-9891.herokuapp.com/api/';
-var token =
+var rootUrl = 'https://safe-brook-9891.herokuapp.com/api/';
+var Actions = require('../actions.jsx');
+var TokenStore = require('../stores/tokenStore.jsx');
+var token = TokenStore.token || "";
 
 module.exports = {
 	get: function(url) {
@@ -10,6 +12,7 @@ module.exports = {
 			}
 		})
 		.then(function(response){
+			console.log(response);
 			return response.toJSON();
 		})
 	},
@@ -20,6 +23,14 @@ module.exports = {
 		})
 		.then(function(response){
 			return response.toJSON();
+		})
+	},
+	login: function(url, data) {
+		return fetch(rootUrl + url, {
+			method: 'post',
+			data: data
+		}).then(function(response){
+			return response.token;
 		})
 	}
 }
