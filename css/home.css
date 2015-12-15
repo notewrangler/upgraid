@@ -1,0 +1,22 @@
+#home-wrapper {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+#bigTitle {
+	position: absolute;
+	top: 500px;
+	left: 230px;
+	font-size: 2.2rem;
+	font-family: 'Roboto', sans-serif;
+	color: #019CF6;
+}
+#bigPic {
+	background-image: url('../assets/UpGbackground.jpeg');
+	margin-top: 70px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1700px;
+	height: 1000px;
+}

@@ -7,11 +7,9 @@ module.exports = Reflux.createStore({
 	listenables: [Actions],
 
 	getToken: function(url, data){
-
-		return Api.login(url, data)
-					.then(function(response){
-						this.token = response.token;
-						console.log(this.token);
-				}.bind(this));
-			}
-		});
+		return $.ajax({url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',	method:'post', data: data
+		}).then(function(resp){
+			this.token = resp.token;
+		}.bind(this));
+	}
+});

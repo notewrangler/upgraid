@@ -11,10 +11,3 @@ body {
 ul {
 	list-style: none;
 }
-
-#bigTitle {
-	padding-top: 50px;
-	font-size: 2.2rem;
-	font-family: 'Roboto', sans-serif;
-	color: #019CF6;
-}

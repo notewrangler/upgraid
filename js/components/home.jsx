@@ -7,8 +7,12 @@ module.exports = React.createClass({
 		return (
 			<div>
 				<Navbar />
-				<h1 id="bigTitle">Welcome to UpgrAID</h1>
-				<p>Please Log in or Register</p>
+					<div id="bigPic">
+						<div id="home-wrapper">
+						<h1 id="bigTitle">Welcome to UpgrAID</h1>
+						<p>Please Log in or Register</p>
+					</div>
+				</div>
 			</div>
 		)
 	}

@@ -23,7 +23,7 @@ module.exports = React.createClass({
 	_submit: function(e) {
 		e.preventDefault();
 		Actions.getToken('api-token-auth/', {username: this.state.username, password: this.state.password});
-		this._goToGroupPage();
+		 this._goToGroupPage();
 	},
 
 	// _reg: function(e) {

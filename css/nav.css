@@ -16,6 +16,7 @@
 #inputBar {
   position: relative;
   top: 5px;
+  left: 250px;
 }
 #links {
 	position: absolute;
