@@ -8,8 +8,9 @@ module.exports = Reflux.createStore({
 
 	getPosts: function(){
 		return Api.get('posts/')
-					.then(function(json){
-						this.posts = json.data;
+					.then(function(data){
+						this.posts = data;
+						console.log(this.posts);
 						this.triggerChange();
 				}.bind(this));
 			},

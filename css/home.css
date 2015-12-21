@@ -7,16 +7,17 @@
 #bigTitle {
 	position: absolute;
 	top: 500px;
-	left: 230px;
-	font-size: 2.2rem;
+	left: 200px;
+	font-size: 3.2rem;
 	font-family: 'Roboto', sans-serif;
 	color: #019CF6;
 }
 #bigPic {
 	background-image: url('../assets/UpGbackground.jpeg');
-	margin-top: 70px;
+	/*margin-top: 50px;*/
+	margin-left: -35px;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 1700px;
-	height: 1000px;
+	width: 1600px;
+	height: 1050px;
 }
