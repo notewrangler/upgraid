@@ -1,0 +1,106 @@
+#profilePostMaster {
+	width:505px;
+	height:505px;
+	overflow:scroll;
+	border:1px solid #f7f7f7;
+	position: relative;
+
+	left:100px;
+	top:-35px;
+	display: inline-block;
+}
+
+#postProfile {
+	width:505px;
+}
+
+#descriptionProfile {
+	width:500px;
+	height:50px;
+	display: block;
+}
+
+
+#postMaster {
+	width:505px;
+	height:505px;
+	overflow:scroll;
+	border:1px solid #f7f7f7;
+	position: relative;
+
+}
+
+#titleInput {
+	width:500px;
+	height: 30px;
+	display: block;
+}
+
+#postInput {
+	width:500px;
+	height:500px;
+	margin:auto;
+	position: relative;
+	top:100px;
+}
+
+#descriptionInput {
+	width:500px;
+	height:50px;
+	display: block;
+}
+
+.commentBox {
+	border-bottom: 1px solid #888;
+	padding: 5px 0;
+	margin: 0;
+	text-indent: 10px;
+	background: #f7f7f7;
+
+}
+
+.commentBox:last-child() {
+	border-bottom:none;
+}
+.commenter {
+	font-size: 10px;
+	position: relative;
+	top:5px;
+	float: left;
+}
+.commentHeader {
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.commentField {
+	display: block;
+	width:505px;
+
+
+	height: 30px;
+	font-size: 0.8rem;
+}
+.postUser {
+	background: #888;
+	width:505px;
+	margin:0;
+	padding-left: 10px;
+}
+
+.postTitle {
+	background: #fff;
+	margin:0;
+	padding-left: 10px;
+}
+.postDescription {
+	background:#F7F2F2;
+}
+
+input {
+	outline: none;
+}
+
+textarea {
+	outline:none;
+}

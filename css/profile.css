@@ -1,0 +1,19 @@
+#profile-wrapper {
+	margin-top: 50px;
+}
+#avatarDiv {
+	width:100%;
+	margin:0;
+	height:130px;
+	background: #ccc;
+	position: relative;
+}
+
+#avatarRankXpContainer {
+	width: 180px;
+	position: relative;
+}
+
+.rank {
+	text-align: left;	
+}

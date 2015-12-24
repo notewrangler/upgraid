@@ -1,18 +1,21 @@
 var React = require('react');
 var Reflux = require('reflux');
-var PostStore = require('../stores/postStore.jsx');
-var Actions = require('../actions.jsx');
-var TokenStore = require('../stores/tokenStore.jsx');
-var Cookies = require('../cookies');
+var PostStore = require('../../stores/postStore.jsx');
+var Actions = require('../../actions.jsx');
+// var TokenStore = require('../stores/tokenStore.jsx');
+var userStore = require('../../stores/userStore');
+var Cookies = require('../../cookies');
 
 
 module.exports = React.createClass({
 	mixins: [
-		Reflux.listenTo(PostStore, 'onChange')
+		Reflux.listenTo(groupStore, 'onChange')
 	],
 	getInitialState: function(){
 		return {
-			posts: []
+			groupId: null,
+			posts: [],
+			
 		}
 	},
 	componentWillMount: function(){

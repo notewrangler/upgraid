@@ -1,12 +1,15 @@
 var React = require('react');
-var Navbar = require('./navbar.jsx');
+var LoginBar = require('./loginRegistration/loginBar.jsx');
+var Nav = require('./common/nav.jsx');
+var UserStore = require('../stores/userStore');
 
 
 module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				<Navbar />
+				{UserStore.data.isLoggedIn ? <Nav /> :
+				<LoginBar /> }
 				{this.props.children}
 			</div>
 		)

@@ -6,8 +6,9 @@ var IndexRoute = ReactRouter.IndexRoute;
 var createBrowserHistory = require('history/lib/createBrowserHistory');
 var App = require('./components/app.jsx');
 var Home = require(('./components/home.jsx'));
-var Group = require('./components/group.jsx');
-var Profile = require('./components/profile.jsx');
+var GroupHome = require('./components/group/groupHome.jsx');
+var ProfileHome = require('./components/profile/profileHome.jsx');
+var UserViewApp = require('./components/userView/userViewApp.jsx');
 
 
 var history = createBrowserHistory();
@@ -16,8 +17,9 @@ module.exports = (
 	<Router history={history}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}/>
-			<Route path="group" component={Group} />
-			<Route path="profile" component={Profile} />
+			<Route path="group/:id" component={GroupHome} />
+			<Route path="profile" component={ProfileHome} />
+			<Route path="userView/:id" component={UserViewApp} />
 		</Route>
 	</Router>
 )

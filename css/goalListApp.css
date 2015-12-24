@@ -1,0 +1,87 @@
+#goalContainer {
+  margin-top: 20px;
+  margin-left: 10px;
+  width:400px;
+  background: #00c5cd;
+  text-align: center;
+}
+#goalInput {
+    width:340px;
+    padding-top:20px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    outline:none;
+}
+#goalHeader {
+  color:#fff;
+}
+.goalContainer {
+  margin:0;
+  width: 500px;
+	padding:0;
+  float: left;
+}
+.goalItem {
+	list-style: none;
+	width: 400px;
+  height: 40px;
+  padding-top: 10px;
+  font-size: 18px;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.goalItem:last-child {
+    border-bottom: none;
+}
+
+#goalSubmit {
+    display: inline;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 3px;
+    background: #27556C;
+}
+#goalSubmit:hover {
+  background: blue;
+  color: white;
+}
+
+.categoryCheckbox {
+    float: left;
+}
+
+.categoryLabel {
+    float: left;
+}
+#postList {
+  width: 60%;
+  margin: auto;
+}
+.delete {
+  float: right;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.6rem;
+  border-radius: 3px;
+  background:#27556C;
+  color:#fff;
+}
+.delete:hover {
+  background: red;
+  color: white;
+}
+#setGoal {
+  margin-bottom: 20px;
+}
+
+.selectCategory {
+  color: #fff;
+}

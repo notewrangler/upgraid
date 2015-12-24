@@ -1,12 +1,12 @@
 var React = require('react');
-var Navbar = require('./navbar.jsx');
+var LoginBar = require('./loginRegistration/loginBar.jsx');
 
 
 module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				<Navbar />
+				<LoginBar />
 					<div id="bigPic">
 						<div id="home-wrapper">
 						<h1 id="bigTitle">Welcome to UpgrAID</h1>

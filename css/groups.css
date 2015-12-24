@@ -1,0 +1,28 @@
+.group {
+    width: 150px;
+    height: 31px;
+
+    background: #00c5cd;
+    outline: none;
+    border: 1px solid #f7f7f7;
+    text-align: right;
+    color: #fff;
+}
+
+.groupButton {
+	display: inline-block;
+	margin:0;
+}
+
+
+
+#groupsContainer {
+	width:150px;
+	text-align: center;
+	margin-bottom: 10px;
+	display: inline-block;
+	position: absolute;
+	top:500px;
+	right:0px;
+	border-left:2px solid #f7f7f7;
+}

@@ -28,8 +28,41 @@ module.exports = {
 		.then(function(response){
 			return response.json();
 		})
+	},
+	put: function(url, data){
+		return fetch(rootUrl + url, {
+			headers: {
+				'Authorization': 'Token ' + Cookies.get('token')
+			},
+			method:'put',
+			data: data
+		})
+		.then(function(response){
+			return response.json();
+		})
+	},
+	patch: function(url, data){
+		return fetch(rootUrl + url, {
+			headers: {
+				'Authorization': 'Token ' + Cookies.get('token')
+			},
+			method:'patch',
+			data: data
+		})
+		.then(function(response){
+			return response.json();
+		})
+	},
+	delete: function(url, data){
+		return fetch(rootUrl + url, {
+			headers: {
+				'Authorization': 'Token ' + Cookies.get('token')
+			},
+			method:'delete',
+			data: data
+		})
+		.then(function(response){
+			return response.json();
+		})
 	}
 }
-
-
-// url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',

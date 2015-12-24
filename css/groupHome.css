@@ -1,0 +1,28 @@
+
+.singlePost {
+	background: #8CF7F3;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.postText {
+	line-height: 80%;
+}
+.userName {
+	font-weight: bold;
+	float: left;
+	margin-right: 30px;
+}
+.title {
+	float: left;
+}
+.groupUser {
+	background: #F7F2F2;
+	border-bottom: 1px solid #888;
+	padding-left: 5px;
+	
+}
+.groupUser:hover {
+	background: lightBlue;
+	color: blue;
+}

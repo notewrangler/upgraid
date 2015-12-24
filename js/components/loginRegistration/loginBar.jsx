@@ -1,12 +1,12 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
-// var LoginBar = require('./loginBar.jsx');
 var History = require('react-router').History;
 var Reflux = require('reflux')
-var Actions = require('../actions.jsx');
+var Actions = require('../../actions.jsx');
+var UserStore = require('../../stores/userStore');
 // var Registration = require('./registration.jsx');
-var Group = require('./group.jsx');
+
 
 module.exports = React.createClass({
 	mixins: [History, Actions],
@@ -16,14 +16,17 @@ module.exports = React.createClass({
 			password: null
 		}
 	},
-	_goToGroupPage: function(){
-		this.history.pushState(null, "group");
+	_goToProfilePage: function(){
+		var logged = _.extend(UserStore.data, {isLoggedIn: true});
+		this.history.pushState(null, "profile");
 	},
 
 	_submit: function(e) {
 		e.preventDefault();
+		var user = _.extend(UserStore.data, {username: this.state.username});
 		Actions.getToken('api-token-auth/', {username: this.state.username, password: this.state.password});
-		 this._goToGroupPage();
+
+		 this._goToProfilePage();
 	},
 
 	// _reg: function(e) {

@@ -2,19 +2,19 @@ var React = require('react');
 var Reflux = require('reflux');
 var Actions = require('../actions.jsx');
 var Api = require('../utils/api.jsx');
+var UserStore = require('../stores/userStore');
 
 module.exports = Reflux.createStore({
 	listenables: [Actions],
 
-	getPosts: function(){
-		return Api.get('posts/')
+	getProfile: function(user){
+		return Api.get('profiles/?username=' + user)
 					.then(function(data){
-						this.posts = data;
-						console.log(this.posts);
+						this.profile = data[0];
 						this.triggerChange();
 				}.bind(this));
 			},
 			triggerChange: function() {
-				this.trigger('change', this.posts);
+				this.trigger('change', this.profile);
 			}
 		});

@@ -7,13 +7,18 @@ var Cookies = require('../cookies');
 module.exports = Reflux.createStore({
 	listenables: [Actions],
 	getToken: function(url, data){
-		var that = this;
+		return 
 		$.ajax({
 			url:'https://safe-brook-9891.herokuapp.com/api/api-token-auth/',
 			method:'post',
 			data: data
-		}).then(function(resp){
+		})
+		.then(function(resp){
 			Cookies.set('token', resp.token);
 		});
 	}
 });
+
+
+var that = this;
+		
